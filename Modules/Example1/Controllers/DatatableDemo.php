@@ -36,7 +36,7 @@ class DatatableDemo extends \App\Controllers\BaseController
     public function ajaxDatatable()
     {
         $db = db_connect();
-        $builder = $db->table('proposals')->select('id, subject');
+        $builder = $db->table('projects')->select('id, name');
 
         return DataTable::of($builder)->toJson();
     }

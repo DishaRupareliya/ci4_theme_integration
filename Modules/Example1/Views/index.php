@@ -2,11 +2,11 @@
 <?= $this->section('title') ?>Test<?= $this->endSection() ?>
 <?= $this->section('content') ?>
     <h1>Datatable!</h1>
-    <table id="proposal_table">
+    <table id="proposal_table" class="table">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Subject</th>
+                <th>Name</th>
             </tr>
         </thead>
         <tbody>

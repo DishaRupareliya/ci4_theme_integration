@@ -20,6 +20,13 @@
             </span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= base_url('datatable') ?>">
+            <span class="nav-link-title">
+              Datatable 1
+            </span>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
