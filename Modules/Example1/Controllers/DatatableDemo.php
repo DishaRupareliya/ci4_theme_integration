@@ -1,7 +1,8 @@
 <?php 
 namespace Example1\Controllers;
+use \Hermawan\DataTables\DataTable;
 
-class Datatable extends \App\Controllers\BaseController
+class DatatableDemo extends \App\Controllers\BaseController
 {
   /**
    * INDEX LEAD STATUS
@@ -30,5 +31,14 @@ class Datatable extends \App\Controllers\BaseController
   public function delete() {
      echo view('Example1\Views\manage');
   }
+
+
+    public function ajaxDatatable()
+    {
+        $db = db_connect();
+        $builder = $db->table('proposals')->select('id, subject');
+
+        return DataTable::of($builder)->toJson();
+    }
 
 }
